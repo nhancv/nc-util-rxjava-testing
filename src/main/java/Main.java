@@ -1,146 +1,77 @@
-import rx.Observable;
-import rx.Subscriber;
-import rx.functions.Action1;
-import java.util.*;
+import com.squareup.okhttp.Interceptor;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
 /**
  * Created by NhanCao on 14-Sep-15.
  */
 public class Main {
-    public Main() {
+    interface ICallback{
+        void success();
+        void error();
+    }
+    class LoggingInterceptor implements Interceptor {
+        @Override public Response intercept(Chain chain) throws IOException {
+            Request request = chain.request();
 
+            long t1 = System.nanoTime();
+            log(String.format("Sending request %s on %s%n%s",
+                    request.url(), chain.connection(), request.headers()));
+
+            Response response = chain.proceed(request);
+
+            long t2 = System.nanoTime();
+            log(String.format("Received response for %s in %.1fms%n%s %s",
+                    response.request().url(), (t2 - t1) / 1e6d, response.headers(), response.body()));
+
+            return response;
+        }
+    }
+    public ArrayList<String> urlList;
+    public void Solve(ICallback callback){
+
+        try {
+            OkHttpClient client = new OkHttpClient();
+            client.interceptors().add(new LoggingInterceptor());
+            Request request = new Request.Builder()
+                    .url(urlList.get(0))
+                    .build();
+            Response response = client.newCall(request).execute();
+            response.body().close();
+            callback.success();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            callback.error();
+        }
     }
 
+    public void createUrlList(){
+        urlList=new ArrayList<>();
+        urlList.add("http://test3.sunnypoint.jp/appointment/api/v1.1/booking/getShopScheduleDetails?auth=abc&queryDate=2015-06-16&shopId=4");
+    }
     public static void log(Object msg) {
         System.out.println(msg);
     }
 
     public static void main(String[] args) {
-
-        Observable.just(1, 2, 3, 4).subscribe(System.out::println);
-
-        Observable
-                .just(1, 2, 3)
-                .doOnNext(x -> {
-                    if (x % 2 == 0) throw new RuntimeException("test");
-                })
-                .subscribe(new Subscriber<Integer>() {
-                    @Override
-                    public void onCompleted() {
-                        System.out.println("Completed Observable.");
-                    }
-
-                    @Override
-                    public void onError(Throwable throwable) {
-                        System.err.println("Whoops: " + throwable.getMessage());
-                    }
-
-                    @Override
-                    public void onNext(Integer integer) {
-                        System.out.println("Got: " + integer);
-                    }
-                });
-
-        Observable
-                .just(1, 2, 3)
-                .doOnNext(new Action1<Integer>() {
-                    @Override
-                    public void call(Integer integer) {
-                        if (integer % 2 != 0) {
-                            throw new RuntimeException("haha");
-                        }
-                    }
-                })
-                .subscribe(new Subscriber<Integer>() {
-                    @Override
-                    public void onCompleted() {
-                        System.out.println("Completed Observable.");
-                    }
-
-                    @Override
-                    public void onError(Throwable throwable) {
-                        System.err.println("Whoops: " + throwable.getMessage());
-                    }
-
-                    @Override
-                    public void onNext(Integer integer) {
-                        System.out.println("Got: " + integer);
-                    }
-                });
-
-//        Filter even numbers
-        Observable
-                .just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-                .filter(integer -> integer % 2 == 0)
-                .subscribe(System.out::println);
-// => 2, 4, 6, 8, 10
-//        Iterating with "forEach"
-        Observable
-                .just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-                .forEach(System.out::println);
-// => 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-//        Group by
-        Observable
-                .just(1, 2, 3, 4, 5)
-                .groupBy(integer -> integer % 2 == 0).subscribe(grouped -> {
-                grouped.toList().subscribe(integers -> {
-                System.out.println(integers + " (Even: " + grouped.getKey() + ")");
-            });
-        });
-        // [1, 3, 5] (Even: false)
-        // [2, 4] (Even: true)
-//        Take only the first N values emitted
-        Observable
-                .just(1, 2, 3, 4, 5)
-                .take(2)
-                .subscribe(System.out::println);
-
-        // => 1, 2
-//       First
-        Observable
-                .just(1, 2, 3, 4, 5)
-                .first()
-                .subscribe(System.out::println);
-
-        // => 1
-//        Last
-        Observable
-                .just(1, 2, 3, 4, 5)
-                .last()
-                .subscribe(System.out::println);
-
-        // => 5
-//        Distinct
-        Observable
-                .just(1, 2, 1, 3, 4, 2)
-                .distinct()
-                .subscribe(System.out::println);
-
-        // => 1, 2, 3, 4
-//        Map()
-        Observable.just("Hello world!")
-                .map(s -> s.hashCode())
-                .subscribe(i -> log(Integer.toString(i)));
-
-        // => 121287312
-//        Iterate an array list
-        List<User> users = new ArrayList<>();
-
-        users.add(new User("jon snow"));
-        users.add(new User("tyrion lannister"));
-
-        Observable
-                .just(users)
-                .concatMap(userList -> Observable.from(userList))
-                .subscribe(user -> log(user.name));
-
-        // concatMap: when applied to an item emitted by the source Observable, returns an Observable
-
-        // => "jon snow", "tyrion lannister"
-    }
-    static class User{
-        String name;
-        public User(String name) {
-            this.name=name;
-        }
+        RetrofitModel.getInstance().Run();
+//        Main test= new Main();
+//        test.createUrlList();
+//        test.Solve(new ICallback() {
+//            @Override
+//            public void success() {
+//                log("sucess");
+//            }
+//
+//            @Override
+//            public void error() {
+//                log("error");
+//            }
+//        });
     }
 }
