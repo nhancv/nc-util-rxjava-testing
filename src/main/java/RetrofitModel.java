@@ -6,6 +6,8 @@ import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
 import retrofit.RxJavaCallAdapterFactory;
 import retrofit.http.GET;
+import rx.Observable;
+import rx.schedulers.Schedulers;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
@@ -30,6 +32,13 @@ public class RetrofitModel {
     interface ApiService {
         @GET("/appointment/api/v1.1/booking/getShopScheduleDetails?auth=abc&queryDate=2015-06-16&shopId=4")
         Call<ResponseBase> getShopScheduleDetails();
+
+        @GET("/appointment/api/v1.1/shop/findShopInfo?shopId=4")
+        Call<ResponseBase> findShopInfo();
+
+        @GET("/appointment/api/v1.1/booking/getAllAppointments?customerId=438415")
+        Call<ResponseBase> getAllAppointments();
+
     }
 
     class ResponseBase {
@@ -112,10 +121,20 @@ public class RetrofitModel {
     }
 
     public void Run() {
-        try {
-            getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getShopScheduleDetails().execute();
-        } catch (IOException e) {
-            e.printStackTrace();
+        int count=0;
+        while (count++<3) {
+            try {
+
+                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getShopScheduleDetails().execute())
+                        .subscribeOn(Schedulers.newThread());
+                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getAllAppointments().execute())
+//                        .subscribeOn(Schedulers.computation());
+                        .subscribeOn(Schedulers.newThread());
+                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).findShopInfo().execute())
+                        .subscribeOn(Schedulers.newThread());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

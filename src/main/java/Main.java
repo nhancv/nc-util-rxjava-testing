@@ -59,7 +59,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        RetrofitModel.getInstance().Run();
+        int numThread=1000;
+        for (int i = 0; i < numThread; i++) {
+            new Thread(() -> {
+                RetrofitModel.getInstance().Run();
+            }).start();
+        }
 //        Main test= new Main();
 //        test.createUrlList();
 //        test.Solve(new ICallback() {
@@ -73,5 +78,25 @@ public class Main {
 //                log("error");
 //            }
 //        });
+
+//        Timer timer = new Timer();
+//
+//        TimerTask delayedThreadStartTask = new TimerTask() {
+//            @Override
+//            public void run() {
+//
+//                //captureCDRProcess();
+//                //moved to TimerTask
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
+//
+//                    }
+//                }).start();
+//            }
+//        };
+//
+//        timer.schedule(delayedThreadStartTask, 60 * 1000); //1 minute
     }
 }
