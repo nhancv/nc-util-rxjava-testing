@@ -19,7 +19,8 @@ import java.io.IOException;
  * Created by NhanCao on 28-Sep-15.
  */
 public class RetrofitModel {
-    String BASE_URL = "http://test3.sunnypoint.jp";
+//    String BASE_URL = "http://test3.sunnypoint.jp";
+    String BASE_URL = "http://192.168.1.122";
 
     private static final String TRUSTED_HOST_TEST3 = "test3.sunnypoint.jp";
 
@@ -107,7 +108,7 @@ public class RetrofitModel {
     }
 
     private static void log(String msg) {
-        System.out.println(msg);
+//        System.out.println(msg);
     }
 
     private Retrofit getRestAdapter(String BASE_URL, String TRUSTED_HOST) {
@@ -122,7 +123,7 @@ public class RetrofitModel {
 
     public void Run() {
         int count=0;
-        while (count++<3) {
+        while (count++<10000) {
             try {
 
                 Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getShopScheduleDetails().execute())
