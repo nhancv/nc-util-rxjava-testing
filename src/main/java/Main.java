@@ -32,6 +32,7 @@ public class Main {
         }
     }
     public ArrayList<String> urlList;
+
     public void Solve(ICallback callback){
 
         try {
@@ -54,17 +55,13 @@ public class Main {
         urlList=new ArrayList<>();
         urlList.add("http://test3.sunnypoint.jp/appointment/api/v1.1/booking/getShopScheduleDetails?auth=abc&queryDate=2015-06-16&shopId=4");
     }
+
     public static void log(Object msg) {
         System.out.println(msg);
     }
 
     public static void main(String[] args) {
-        int numThread=1000;
-        for (int i = 0; i < numThread; i++) {
-            new Thread(() -> {
-                RetrofitModel.getInstance().Run();
-            }).start();
-        }
+
 //        Main test= new Main();
 //        test.createUrlList();
 //        test.Solve(new ICallback() {
@@ -98,5 +95,19 @@ public class Main {
 //        };
 //
 //        timer.schedule(delayedThreadStartTask, 60 * 1000); //1 minute
+
+//        testServer();
+
+
+
+    }
+
+    private static void testServer() {
+        int numThread=10000;
+        for (int i = 0; i < numThread; i++) {
+            new Thread(() -> {
+                RetrofitModel.getInstance().Run();
+            }).start();
+        }
     }
 }

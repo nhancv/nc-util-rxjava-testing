@@ -21,14 +21,21 @@ import java.io.IOException;
 public class RetrofitModel {
 //    String BASE_URL = "http://test3.sunnypoint.jp";
     String BASE_URL = "http://192.168.1.122";
+    String BASE_URLs = "https://192.168.1.122:8183";
 
-    private static final String TRUSTED_HOST_TEST3 = "test3.sunnypoint.jp";
+//    private static final String TRUSTED_HOST_TEST3 = "test3.sunnypoint.jp";
+    private static final String TRUSTED_HOST_TEST3 = "192.168.1.122";
 
     private static RetrofitModel instance = new RetrofitModel();
 
     public static RetrofitModel getInstance() {
         return instance;
     }
+
+//    192.168.1.122
+//            8183
+//    http://192.168.1.122/appointment/api/v1.1/booking/getShopScheduleDetails?auth=abc&queryDate=2015/09/25&shopId=2173
+//    https://192.168.1.122:8183/api/v1.3/shop/getShopInfo?shopId=2010&auth=abc
 
     interface ApiService {
         @GET("/appointment/api/v1.1/booking/getShopScheduleDetails?auth=abc&queryDate=2015-06-16&shopId=4")
@@ -40,6 +47,9 @@ public class RetrofitModel {
         @GET("/appointment/api/v1.1/booking/getAllAppointments?customerId=438415")
         Call<ResponseBase> getAllAppointments();
 
+//        https://192.168.1.122:8183/api/v1.3/shop/getShopInfo?shopId=2010&auth=abc
+        @GET("/api/v1.3/shop/getShopInfo?shopId=2010&auth=abc")
+        Call<ResponseBase> getShopInfo();
     }
 
     class ResponseBase {
@@ -123,15 +133,17 @@ public class RetrofitModel {
 
     public void Run() {
         int count=0;
-        while (count++<10000) {
+        while (count++<1000) {
             try {
-
-                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getShopScheduleDetails().execute())
-                        .subscribeOn(Schedulers.newThread());
-                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getAllAppointments().execute())
-//                        .subscribeOn(Schedulers.computation());
-                        .subscribeOn(Schedulers.newThread());
-                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).findShopInfo().execute())
+//
+//                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getShopScheduleDetails().execute())
+//                        .subscribeOn(Schedulers.newThread());
+//                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).getAllAppointments().execute())
+////                        .subscribeOn(Schedulers.computation());
+//                        .subscribeOn(Schedulers.newThread());
+//                Observable.just(getRestAdapter(BASE_URL, TRUSTED_HOST_TEST3).create(ApiService.class).findShopInfo().execute())
+//                        .subscribeOn(Schedulers.newThread());
+                Observable.just(getRestAdapter(BASE_URLs, TRUSTED_HOST_TEST3).create(ApiService.class).getShopInfo().execute())
                         .subscribeOn(Schedulers.newThread());
             } catch (IOException e) {
                 e.printStackTrace();
