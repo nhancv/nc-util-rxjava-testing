@@ -1,0 +1,82 @@
+showContent: <html><head>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,target-densitydpi=device-dpi'>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <style>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: html, div, body {
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: font-family: Helvetica;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: font-size: 14px;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: word-wrap: break-word;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: -webkit-text-size-adjust:none;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: -webkit-nbsp-mode: space;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: background: transparent;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: }
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: pre {
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: white-space: pre-wrap;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: }
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: img {
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: max-width: 99%;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: height:auto;
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: }
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </style>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </head><body><span style="color: #ff00ff;"><em><strong><span style="text-decoration: underline;"></span></strong></em></span><br>Noi dung text<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <p>Trao đổi với <em>VnExpress</em> hôm qua (2/11), đại diện một số doanh nghiệp đầu mối cũng dự báo giá xăng dầu sẽ cùng giảm tại kỳ điều chỉnh hôm nay. Trong đó giá xăng được tính toán giảm ở mức 500-600 đồng mỗi lít, còn giá dầu thấp hơn, giảm khoảng 300-400 đồng.</p>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <p>Tình từ đầu năm đến nay, giá xăng trải qua 6 lần tăng, 9 lần giảm và thấp hơn so với giai đoạn cuối năm 2014 là 650 đồng mỗi lít.</p>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <br><img src="file:///storage/sdcard0/Android/data/com.sunnypoint.shopper/cache/155.1446547310007@localhost"/><br><img src="file:///storage/sdcard0/Android/data/com.sunnypoint.shopper/cache/156.1446547310007@localhost"/><br><img src="file:///storage/sdcard0/Android/data/com.sunnypoint.shopper/cache/157.1446547310007@localhost"/>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <div id="footer">
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: --------------------<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: ※本メールは送信専用です。<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: ご返信いただきましても、対応に時間を要することがあります。<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: お手数ですが、お急ぎの場合は、直接店舗にご連絡ください。<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: 店舗への返信は<a href="mailTo:una.beautysalon@gmail.com?subject=Re: er (お客様ID:$customerId お店ID:1493)">こちら</a><br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: --------------------<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: &lt;送信元情報&gt;<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: UNA true beauty【test3】<br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <a href="tel:03-6320-4361">03-6320-4361</a><br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: 店舗詳細は<a href="http://test3.sunnypoint.jp/user/viewshopinformation.do?guid=ON&shopid=1493&cusid=">こちら</a><br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: メール解除は<a href="mailto:no-reply@test3.sunnypoint.jp?subject=[unsubscribe]TEST_d0008a36-9c56-43c6-8300-86ef76382096&body=このまま空ﾒｰﾙ送信してください。">こちら</a><br><br>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: 一部メール解除が上手く作動しない機種がございます。そのようなお客様は、お手数ですが<a href="mailto:info@test3.sunnypoint.jp?subject=メール解除希望&body=このまま空ﾒｰﾙ送信してください。">こちら</a>からメールを送信してください。
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </div>
+11-04 09:02:58.161 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </body></html>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: showContent: <html><head>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,target-densitydpi=device-dpi'>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <style>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: html, div, body {
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: font-family: Helvetica;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: font-size: 14px;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: word-wrap: break-word;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: -webkit-text-size-adjust:none;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: -webkit-nbsp-mode: space;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: background: transparent;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: }
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: pre {
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: white-space: pre-wrap;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: }
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: img {
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: max-width: 99%;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: height:auto;
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: }
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </style>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </head><body><span style="color: #ff00ff;"><em><strong><span style="text-decoration: underline;"></span></strong></em></span><br>Noi dung text<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <p>Trao đổi với <em>VnExpress</em> hôm qua (2/11), đại diện một số doanh nghiệp đầu mối cũng dự báo giá xăng dầu sẽ cùng giảm tại kỳ điều chỉnh hôm nay. Trong đó giá xăng được tính toán giảm ở mức 500-600 đồng mỗi lít, còn giá dầu thấp hơn, giảm khoảng 300-400 đồng.</p>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <p>Tình từ đầu năm đến nay, giá xăng trải qua 6 lần tăng, 9 lần giảm và thấp hơn so với giai đoạn cuối năm 2014 là 650 đồng mỗi lít.</p>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <br><img src="file:///storage/sdcard0/Android/data/com.sunnypoint.shopper/cache/155.1446547310007@localhost"/><br><img src="file:///storage/sdcard0/Android/data/com.sunnypoint.shopper/cache/156.1446547310007@localhost"/><br><img src="file:///storage/sdcard0/Android/data/com.sunnypoint.shopper/cache/157.1446547310007@localhost"/>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <div id="footer">
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: --------------------<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: ※本メールは送信専用です。<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: ご返信いただきましても、対応に時間を要することがあります。<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: お手数ですが、お急ぎの場合は、直接店舗にご連絡ください。<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: 店舗への返信は<a href="mailTo:una.beautysalon@gmail.com?subject=Re: er (お客様ID:$customerId お店ID:1493)">こちら</a><br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: --------------------<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: &lt;送信元情報&gt;<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: UNA true beauty【test3】<br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <a href="tel:03-6320-4361">03-6320-4361</a><br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: 店舗詳細は<a href="http://test3.sunnypoint.jp/user/viewshopinformation.do?guid=ON&shopid=1493&cusid=">こちら</a><br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: <br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: メール解除は<a href="mailto:no-reply@test3.sunnypoint.jp?subject=[unsubscribe]TEST_d0008a36-9c56-43c6-8300-86ef76382096&body=このまま空ﾒｰﾙ送信してください。">こちら</a><br><br>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: 一部メール解除が上手く作動しない機種がございます。そのようなお客様は、お手数ですが<a href="mailto:info@test3.sunnypoint.jp?subject=メール解除希望&body=このまま空ﾒｰﾙ送信してください。">こちら</a>からメールを送信してください。
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </div>
+11-04 09:02:58.691 31882-31882/com.sunnypoint.shopper E/com.sunnypoint.shopper.ui.adapter.SPMAAdapterMailDetails: </body></html>
